@@ -1,0 +1,30 @@
+{
+    "data": [
+        {
+            "name": "Settings",
+            "features": [
+                {
+                    "name": "Audit Log",
+                    "status": false
+                },
+                {
+                    "name": "Users",
+                    "status": false
+                }
+            ]
+        },
+        {
+            "name": "Alerts",
+            "features": [
+                {
+                    "name": "Alert Manager",
+                    "status": false
+                },
+                {
+                    "name": "Alert Rules",
+                    "status": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "features": [
+        {
+            "name": "Case Management",
+            "status": false,
+            "category": "general"
+        },
+        {
+            "name": "Map Timeline",
+            "status": false,
+            "category": "general"
+        },
+        {
+            "name": "Views & Briefing",
+            "status": false,
+            "category": "general"
+        },
+        {
+            "name": "Notifications",
+            "status": false,
+            "category": "general"
+        },
+        {
+            "name": "Traffic Cameras",
+            "status": false,
+            "category": "general"
+        },
+        {
+            "name": "Mass Comunications",
+            "status": false,
+            "category": "general"
+        }
+    ]
+}
