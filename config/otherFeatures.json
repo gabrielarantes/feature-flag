@@ -1,34 +1,30 @@
 {
-    "features": [
+    "data": [
         {
-            "name": "Case Management",
-            "status": false,
-            "category": "general"
+            "name": "Settings",
+            "features": [
+                {
+                    "name": "Audit Log",
+                    "status": false
+                },
+                {
+                    "name": "Users",
+                    "status": false
+                }
+            ]
         },
         {
-            "name": "Map Timeline",
-            "status": false,
-            "category": "general"
-        },
-        {
-            "name": "Views & Briefing",
-            "status": false,
-            "category": "general"
-        },
-        {
-            "name": "Notifications",
-            "status": false,
-            "category": "general"
-        },
-        {
-            "name": "Traffic Cameras",
-            "status": false,
-            "category": "general"
-        },
-        {
-            "name": "Mass Comunications",
-            "status": false,
-            "category": "general"
+            "name": "Alerts",
+            "features": [
+                {
+                    "name": "Alert Manager",
+                    "status": false
+                },
+                {
+                    "name": "Alert Rules",
+                    "status": false
+                }
+            ]
         }
     ]
 }
