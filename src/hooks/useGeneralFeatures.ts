@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react'
 import ax from '../config/axiosConfig'
 
+
 export const useGetGeneralFeatures = () => {
 
     const [features, setFeatures] = useState([])
@@ -8,13 +9,12 @@ export const useGetGeneralFeatures = () => {
     const getData = async () => {
         try {
             await ax.get('generalFeatures.json').then(res => {
-                setFeatures(res.data)
+                setFeatures(res.data.features)
             })
         } catch (e) {
 
         }
     }
 
-
-    return { getData, features }
+    return { getData, features : features }
 }

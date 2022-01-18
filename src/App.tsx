@@ -1,33 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import { useGetGeneralFeatures } from './hooks/useGeneralFeatures'
-import { Switcher } from './components'
-import {isEmpty} from 'lodash'
-
+import { isEmpty } from 'lodash'
+import { GeneralFeatures } from './components'
+import {Box} from '@material-ui/core'
 function App() {
 
-  const [features, setFeatures] = useState([])
-  const { features: data, getData } = useGetGeneralFeatures()
+  const [generalFeatures, setFeatures] = useState([])
+  const { features: generalFeaturesData, getData } = useGetGeneralFeatures()
 
   useEffect(() => {
     getData()
   }, [])
 
   useEffect(() => {
-    !isEmpty(data) && setFeatures(data)
-  }, [data])
-
-  //console.log(generalFeatures)
+    !isEmpty(generalFeaturesData) && setFeatures(generalFeaturesData)
+  }, [generalFeaturesData])
 
   return (
-    <div className="App">
-      <header className="App-header">
-
-
-        <Switcher isChecked={false} />
-
-      </header>
-    </div>
+    <Box className="App" bgcolor='black' height={'100%'}>
+      {!isEmpty(generalFeatures) && (<GeneralFeatures features={generalFeatures} />)}
+    </Box>
   );
 }
 
